@@ -1,6 +1,6 @@
 import joblib
 import numpy as np
-
+import streamlit as st
 
 model = joblib.load("student_pass_model.pkl")
 st.title("Student Pass/Fail Prediction System")
@@ -14,4 +14,5 @@ else:
 
 
         st.error("Prediction: FAIL")
+
 
